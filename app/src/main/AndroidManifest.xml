@@ -16,6 +16,25 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ShowDetails"
+            android:label="@string/title_activity_show_details" >
+            <intent-filter>
+                <action android:name="io.sawa.android.sawa.ShowDetails" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".SMSReceiver" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".TEST"
+            android:label="@string/title_activity_test" >
+        </activity>
     </application>
 
 </manifest>
